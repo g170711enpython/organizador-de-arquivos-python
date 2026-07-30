@@ -10,8 +10,9 @@ Dicionario = {
 ".zip" : "Arquivos Zip",
 ".py" : "codigos",
 ".ipynb" : "codigos",
-"png" : "imagem",
-"pdf" : "documento",
+".png" : "imagem",
+".pdf" : "documento",
+".EXE" : "programas"
 }
 
 pasta = Path(r"D:\dowloads_d")
