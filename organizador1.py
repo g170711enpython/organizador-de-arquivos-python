@@ -30,4 +30,4 @@ if pasta.exists():
                 shutil.move(str(item), str(caminho_final))
                 print(f"o arquivo {item.name} foi movido com exito para a pasta {caminho_final}")
             else:
-                print(f"o arquivo {item.name} nao pode ser movido, portanto foi ignorado")  
+                print(f"o arquivo {item.name} nao pode ser movido, portanto foi ignorado")
