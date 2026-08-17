@@ -12,10 +12,11 @@ Dicionario = {
 ".ipynb" : "codigos",
 ".png" : "imagem",
 ".pdf" : "documento",
-".EXE" : "programas"
+".EXE" : "programas",
+".jar" : "codigos"
 }
 
-pasta = Path(r"D:\dowloads_d")
+pasta = Path(r"D:/")
 if pasta.exists():
     print(f"a seguinte pasta existe: {pasta}")
     lista_arquivos = pasta.iterdir()
@@ -25,7 +26,7 @@ if pasta.exists():
             pasta_destino = Path(r"D:\organizador")
             if item.suffix in Dicionario:
                 pasta_final = pasta_destino / Dicionario[item.suffix]
-                pasta_final.mkdir(exist_ok=True)       
+                pasta_final.mkdir(parents=True, exist_ok=True)       
                 caminho_final = pasta_final / item.name
                 shutil.move(str(item), str(caminho_final))
                 print(f"o arquivo {item.name} foi movido com exito para a pasta {caminho_final}")
