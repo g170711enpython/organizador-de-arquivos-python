@@ -13,7 +13,9 @@ Dicionario = {
 ".png" : "imagem",
 ".pdf" : "documento",
 ".EXE" : "programas",
-".jar" : "codigos"
+".jar" : "codigos",
+".json" : "imagens",
+"csv" : "documento",
 }
 
 pasta = Path(r"D:/")
