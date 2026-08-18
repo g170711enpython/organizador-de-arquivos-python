@@ -35,4 +35,8 @@ if pasta.exists():
                 shutil.move(str(item), str(caminho_final))
                 print(f"o arquivo {item.name} foi movido com exito para a pasta {caminho_final}")
             else:
-                print(f"o arquivo {item.name} nao pode ser movido, portanto foi ignorado")
+                pasta_outros = pasta_destino / "outros"
+                pasta_outros.mkdir(parents=True, exist_ok=True)
+                caminho_final = pasta_outros / item.name
+                shutil.move(str(item), str(caminho_final))
+                print(f"o arquivo {item.name} foi movido com exito para a pasta {caminho_final}")
